@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<style>
+  body {
+    background-color: gray;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; with flex-direction column this moves things up and down */
+    align-items: center;
+  }
+
+  .neck {
+    background-color: #4d4a4a;
+    width: 50px;
+    height: 100px
+  }
+
+  .box {
+    background-color: #4d4a4a;
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5%;
+  }
+
+  .light {
+    background-color: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+
+  .red {
+    background-color: red;
+    transition: all linear 0.5s
+  }
+
+  .yellow {
+    background-color: yellow;
+    transition: all linear 0.5s;
+  }
+
+  .green {
+    background-color: greenyellow;
+    transition: all linear 0.5s
+  }
+
+  .red.glow:hover {
+    box-shadow: 0px 0px 50px red;
+    transition: all linear 0.5s;
+  }
+
+  .yellow.glow:hover {
+    box-shadow: 0px 0px 50px yellow;
+  }
+
+  .green.glow:hover {
+    box-shadow: 0px 0px 50px rgb(31, 199, 31);
+  }
+</style>
+
+
+
+<body>
+  <section class="neck">
+  </section>
+  <section class="box">
+    <div class="light red glow"></div>
+    <div class="light yellow glow"></div>
+    <div class="light green glow"></div>
+  </section>
+</body>
+
+</html>
